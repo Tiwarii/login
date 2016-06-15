@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page import="com.login.entities.User"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -16,7 +17,7 @@
        
        <% 
         User verifiedUser =(User)session.getAttribute("verifiedUser");
-        if(verifiedUser!= null){
+        if(verifiedUser== null){
        %>
        
         <form  >
